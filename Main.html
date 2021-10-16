@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div id="nav-div">
+        <h1>Python Documentation</h1>
+        <nav id="navigation-bar">
+            <a href="#introduction" class="nav-link">Introduction</a>
+            <a href="#wysak" class="nav-link">What you should already know</a>
+            <a href="#hellow" class="nav-link">Hello world</a>
+            <a href="#variables" class="nav-link">Variables</a>
+            <a href="#decvar" class="nav-link">Declaring variables</a>
+            <a href="#loops" class="nav-link">Loops</a>
+            <a href="#ifelse" class="nav-link">if...else statement</a>
+            <a href="#reference" class="nav-link">Reference</a>
+        </nav>
+    </div>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>Introduction</header>
+            <p>
+                Python is a popular programming language that is used for web development (server-side), software development, mathematics and system scripting.
+                Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc), It has simple syntax that is similar to the English language and developers may need to write fewer lines of code than some other programming languages. It runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick and can be treated in multiple ways.
+            </p>
+            <br>
+            <p>
+                Python can be:
+                <ul>
+                    <li>Used on a server to create web applications.</li>
+                    <li>Used alongside software to create workflows.</li>
+                    <li>Connect to database systems. It can also read and modify files.</li>
+                    <li>Used to handle big data and perform complex mathematics.</li>
+                    <li>Used for rapid prototyping, or for production-ready software development.</li>
+                </ul>
+            </p>
+        </section>
+        <section id="wysak" class="main-section">
+            <header>What you should already know</header>
+            <p>
+                This guide assumes you have the following basic background:
+                <ul>
+                    <li>General understanding of programming and its languages.</li>
+                    <li>Basic Python knowledge like what it is and what it is used for.</li>
+                    <li>Some programming experience.</li>
+                </ul>
+        </section>
+        <section id="hellow" class="main-section">
+            <header>Hello World</header>
+            <p>
+                To get started writing with Python, create a file with any name and with the extension of .py and open it up using any text editor or IDE (Integrated Development Environment). After creating the file, write your first "Hello World" code like this:
+            </p>
+            <code>
+                print("Hello World")
+            </code>
+            <p>
+                Once you are done, hit F5 or run on the menu bar to execute your code!
+            </p>
+        </section>
+        <section id="variables" class="main-section">
+            <header>Variables</header>
+            <p>
+                Variables are containers in which you can store some values that can be used later in your code, variables are very useful for storing values to be used later repeatedly and for mathematical operations as well.
+            </p>
+            <br>
+            <p>
+                Python variables do not need to be declared with any particular type, you can change the type of the variable after declaring it any number of times. There are multiple data types in Python like: String (used for text), Integer (used for number) and Bool (used for true or false).
+            </p>
+        </section>
+        <section id="decvar" class="main-section">
+            <header>Declaring variables</header>
+            <p>
+            You can declare a variable like this:
+            </p>
+            <code>
+                x = 10
+            </code>
+            <p>
+                You can change the value of the variable in the same way as declaring a variable.
+            </p>
+        </section>
+        <section id="loops" class="main-section">
+            <header>Loops</header>
+            <p>
+                A "for" loop in Python is the most basic loop that is used in Python. It is used for iterating over a sequence a number of times that can be defined by the programmer. In a "for" loop, the loop is assigned a variable in which it adds or subtracts a certain number (usually 1) and keeps track of the number, after the number reaches its limit that is defined by the programmer, the loop exits itself.
+            </p>
+            <br>
+            <p>
+                You can create a "for" loop like this:
+            </p>
+            <code>
+                for x in range(25):
+                <br>
+                &nbsp; &nbsp; print(x)
+            </code>
+            <p>
+                In the above code, x is a variable (doesn't need to be declared before the loop) in which 1 is added every time it goes through the loop, once it reaches 25, it exits the loop. print(x) prints the value of x every time it goes through the loop, so the output would be like this: 0, 1, 2, 3 and so on.
+            </p>
+            <br>
+            <p>
+                A "while" loop, iterates over a sequence as long as a condition is true. For example:
+            </p>
+            <code>
+                x = 0
+                <br>
+                while x < 5:
+                <br>
+                &nbsp; &nbsp; x++
+                <br>
+                &nbsp; &nbsp; print(x) 
+            </code>
+            <p>
+                In the above code, x is a variable that is declared a value as 0, the "while" loop checks if x is under 5, if it is, it adds 1 to x as ++ adds 1 to the variable which is x in this case and it prints the value of x. After x is equal to or greater than 5, it exits the loop.
+            </p>
+        </section>
+        <section id="ifelse" class="main-section">
+            <header>if...else statement</header>
+            <p>
+                The if statement is used for executing (a) statement(s) if a logical operation is true. The optional else statement is used for executing (a) statement(s) if the logical condition in the if statement is not true.
+            </p>
+            <br>
+            <p>
+                An if...else statement can be written like this:
+            </p>
+            <code>
+                x = 10
+                <br>
+                if x > 5:
+                <br>
+                &nbsp; &nbsp; print("x is greater than 5.")
+                <br>
+                else:
+                <br>
+                &nbsp; &nbsp; print("x is not greater than 5.")
+            </code>
+        </section>
+        <section id="reference" class="main-section">
+            <header>Reference</header>
+            <p>
+                All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp" target="_blank">W3Schools</a> and <a href="https://learn.onemonth.com/6-things-to-know-before-you-learn-python/" target="_blank">Learn to code in 30 days</a>.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
